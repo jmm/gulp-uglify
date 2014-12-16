@@ -84,7 +84,6 @@ module.exports = function(opt) {
 		if (file.sourceMap) {
 			mangled.map = JSON.parse(mangled.map);
 			mangled.map.sources = file.sourceMap.sources;
-			mangled.map = JSON.stringify(mangled.map);
 
 			applySourceMap(file, mangled.map);
 		}
